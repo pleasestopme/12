@@ -1,0 +1,28 @@
+.slider__list {
+  position: relative;
+  display: flex;
+  transition-duration: 1s;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.slider__toggle {
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+}
+
+.slider--nojs {
+  overflow-x: scroll;
+}
+
+
+@media @desktop-width {
+  .slider--nojs {
+    overflow-x: hidden;
+  }
+}
